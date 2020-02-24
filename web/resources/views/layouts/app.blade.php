@@ -450,21 +450,18 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="footer_panel content_space">
-              <h4 class="heading_border heading_space">EXTRAS
+              <h4 class="heading_border heading_space">LIADOS
               </h4>
               <ul class="account_foot">
                 <li>
-                  <a href="#.">Marcas
+                  <a href="https://www.camaradirecta.com/"><img src="{{ asset('images/camara.png')}}" width="60%">
                   </a>
                 </li>
                 <li>
-                  <a href="#.">Afiliados
+                  <a href="https://procolombia.co/"><img src="{{ asset('images/pro.png')}}" width="60%">
                   </a>
                 </li>
-                <li>
-                  <a href="#.">Ofertas
-                  </a>
-                </li>
+                
               </ul>
             </div>
           </div>

@@ -9,6 +9,8 @@ use App\News;
 use App\Categoria;
 use App\Joya;
 use App\Catalogo;
+use Mail;
+use Redirect;
 
 
 class InicioController extends Controller
@@ -85,6 +87,12 @@ class InicioController extends Controller
     }
     public function enviarCatalogo(Request $request){
         $this->validate($request,[ 'name'=>'required', 'email'=>'required', 'city'=>'required', 'phone'=>'required', 'categoria_id'=>'required' ]);
+
+        Mail::send('email.enviados',$request->all() , function($message){
+            $message->from('info@valeny.com','Valeny Joyeria');
+            $message->to('brynlozada@gmail.com')->subject('Nuevo catalogo enviado');
+        });
+        
 
         Catalogo::create($request->all());
 

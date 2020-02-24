@@ -450,7 +450,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="footer_panel content_space">
-              <h4 class="heading_border heading_space">LIADOS
+              <h4 class="heading_border heading_space">ALIADOS
               </h4>
               <ul class="account_foot">
                 <li>

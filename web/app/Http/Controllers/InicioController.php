@@ -10,7 +10,7 @@ use App\Categoria;
 use App\Joya;
 use App\Catalogo;
 use Mail;
-use Redirect;
+use Redirect; 
 
 
 class InicioController extends Controller
@@ -86,12 +86,12 @@ class InicioController extends Controller
         return view('web.catalogo', ['categorias' => $categorias]);
     }
     public function enviarCatalogo(Request $request){
-        $this->validate($request,[ 'name'=>'required', 'email'=>'required', 'city'=>'required', 'phone'=>'required', 'categoria_id'=>'required' ]);
+        $this->validate($request,[ 'name'=>'required', 'email'=>'required', 'pais'=>'required', 'city'=>'required', 'phone'=>'required', 'categoria_id'=>'required' ]);
 
-        Mail::send('email.catalogo',$request->all() , function($message){
+        /* Mail::send('email.catalogo',$request->all() , function($message){
             $message->from('info@valeny.com','Valeny Joyeria');
             $message->to('info@valeny.com')->subject('Nuevo catalogo enviado');
-        });
+        }); */
 
         Catalogo::create($request->all());
 

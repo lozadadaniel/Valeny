@@ -1,21 +1,8 @@
  @extends('layouts.app')
 
 @section('content')
-<!--Page Header-->
-  <section class="page_header2 padding">
-    <div class="container">
-      <div class="header_content padding">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1 class="uppercase"> Solicitar Catálogo</h1>
-            <p>Siempre puedes enviarnos un correo electrónico.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="page_menu">
+<section class="page_menu">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -73,6 +60,10 @@
                                             @endforeach
                           </select>
               </div>
+              <div class="col-md-6 form-group">
+                <label for="exampleInputEmail2">Pais</label>
+                <input type="text" class="form-control" id="pais" name="pais" placeholder="">
+              </div>
               <div class="col-md-12 form-group">
                 <button type="submit" class="btn-form uppercase border-radius margintop40" >Enviar</button>
                 
@@ -112,5 +103,21 @@
       </div>
     </div>
   </section>
+
+<!--Page Header-->
+  <section class="page_header2 padding">
+    <div class="container">
+      <div class="header_content padding">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="uppercase"> Solicitar Catálogo</h1>
+            <p>Siempre puedes enviarnos un correo electrónico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
 
 @endsection

@@ -226,7 +226,7 @@
         </div>
         <div class="row">
           <div id="fourCol-slider" class="owl-carousel">
-            @foreach ($joyas as $joya)
+            @foreach ($pulseras as $joya)
             <div class="item">
               <div class="product_wrap">
                 <div class="image">

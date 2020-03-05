@@ -42,19 +42,19 @@
               </div>
               <div class="col-md-6 form-group">
                 <label for="exampleInputEmail2">Correo</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="correo@ejemplo.com">
+                <input type="email" class="form-control" id="email" name="email" placeholder="correo@ejemplo.com" required>
               </div>
                <div class="col-md-6 form-group">
                 <label for="exampleInputName2">Telefono</label>
-                <input type="text" class="form-control" id="phone" name="phone" placeholder="000-000-0000">
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="000-000-0000" required>
               </div>
               <div class="col-md-6 form-group">
                 <label for="exampleInputEmail2">Ciudad</label>
-                <input type="text" class="form-control" id="city" name="city" placeholder="">
+                <input type="text" class="form-control" id="city" name="city" placeholder="" required>
               </div>
               <div class="col-md-6 form-group">
                 <label for="exampleInputEmail2">Producto de interes</label>
-                 <select class="form-control"  name="categoria_id" >
+                 <select class="form-control"  name="categoria_id" required>
                                             @foreach($categorias as $categoria)
                                             <option value="{{ $categoria->id }}" >{{ $categoria->name }}</option>
                                             @endforeach
@@ -62,7 +62,7 @@
               </div>
               <div class="col-md-6 form-group">
                 <label for="exampleInputEmail2">Pais</label>
-                <input type="text" class="form-control" id="pais" name="pais" placeholder="">
+                <input type="text" class="form-control" id="pais" name="pais" placeholder="" required>
               </div>
               <div class="col-md-12 form-group">
                 <button type="submit" class="btn-form uppercase border-radius margintop40" >Enviar</button>

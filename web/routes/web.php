@@ -25,7 +25,7 @@ Route::get('/garantia', 'InicioController@garantia')->name('garantia');
 Route::get('/como-comprar.html', 'InicioController@comoComprar')->name('como.comprar');
 
 Route::post('/enviar/newsteller', 'InicioController@enviarNew')->name('enviar.new');
-Route::post('/enviar/contacto', 'InicioController@contacto')->name('enviar.contacto');
+Route::post('/enviar/contacto', 'InicioController@enviarContacto')->name('enviar.contacto');
 
 //Enlaces
 Route::get('/Joyas-de-Acero-por-mayor-Colombia', 'InicioController@joyasAceroPorMayor')->name('acero.colombia');

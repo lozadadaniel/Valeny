@@ -90,8 +90,5 @@
   </section> 
 
 
-  <section class="padding_bottom">
-    <h3 class="hidden">hidden</h3>
-    <div id="test" class="gmap3"></div>
-  </section>
+  
 @endsection

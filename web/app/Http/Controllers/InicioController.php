@@ -60,7 +60,11 @@ class InicioController extends Controller
         return view('web.joyasAceroPorMayor');
     }
 
-     public function contacto(Request $request)
+     public function contacto()
+    {
+        return view('web.contacto');
+    }
+    public function enviarContacto(Request $request)
     {
          
          /* Mail::send('email.contacto',$request->all() , function($message){

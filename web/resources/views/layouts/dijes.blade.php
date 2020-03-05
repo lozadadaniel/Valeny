@@ -519,8 +519,7 @@ s0.parentNode.insertBefore(s1,s0);
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U">
     </script>
-    <script src="{{ asset('js/gmap3.min.js') }}">
-    </script>
+   
     <script src="{{ asset('js/bootstrap.min.js') }}">
     </script>
     <script src="{{ asset('js/bootsnav.js') }}">

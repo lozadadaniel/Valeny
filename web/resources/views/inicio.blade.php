@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('content') 
 
 <section class="rev_slider_wrapper">    
       <div id="rev_slider" class="rev_slider"  data-version="5.0">
@@ -308,11 +308,18 @@
     <section id="sobre" class="padding"  >
       <div class="container" >
         <div class="row">
+          
           <div class="col-md-1">
+
           </div>
           <div class="col-md-10">
+
+
+
+
             <div id="tstinomial-slider" class="owl-carousel">
               <div class="item text-center" >
+
                 <div class="testinomial_pic heading_space">
                   <img src="{{asset('images/testinomial1.png')}}" alt="testinomial">
                   <h6 class="uppercase"  >Valeny
@@ -322,8 +329,10 @@
                 </div>
                 <p>Valeny es una joyería mayorista productora de elegantes joyas de oro y plata elaboradas a mano por artesanos joyeros. Nuestros precios son los mejores del mercado de la joyería. Los Anillos, Pulseras, Aretes y Dijes contienen piedras, circones, oro rosado, oro amarillo, plata ley 925. Nuestra fábrica principal está ubicada en Bucaramanga, Santander, Colombia. Desde donde despachamos al exterior nuestras joyas. 10 años de experiencia en la elaboración de joyas hacen que seamos la mejor opción en proveedores de joyas de calidad.
                 </p>
+
               </div> 
             </div>
+
           </div>
           <div class="col-md-1">
           </div>
@@ -388,6 +397,14 @@
     </section>
       </div>
     </section>
+    <div class="row">
+    <div class="col-md-12">
+            <p><center>
+                <div class="fb-page" data-href="https://www.facebook.com/joyasvaleny" data-tabs="timeline" data-width="900" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/joyasvaleny" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/joyasvaleny">Joyas Valeny</a></blockquote></div>
+              </center>
+              </p>
+          </div>
+    </div>
     <section id="sobre" class="padding"  >
     <!-- SnapWidget -->
 <script src="https://snapwidget.com/js/snapwidget.js"></script>

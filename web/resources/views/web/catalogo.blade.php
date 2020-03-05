@@ -88,6 +88,11 @@
             <div class="address bottom30">
               <i class="fa fa-map-marker"></i>
               <h5 class="uppercase">Ubicación</h5>
+              <p>Bucaramanga, Colombia.</p>
+            </div>
+            <div class="address bottom30">
+              <i class="fa fa-map-marker"></i>
+              <h5 class="uppercase">Distribuidores</h5>
               <p>Colombia, Argentina, Chile, Miami, Ecuador ,Panamá,Costa Rica, Mexico, Estados Unidos.</p>
             </div>
             <div class="address bottom30">

@@ -133,7 +133,7 @@
                     <span class="uppercase text-center">Nuevo</span>
                   </div>
                 </div>
-                <a class="fancybox" href="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}"><img src="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}" alt="Product" class="img-responsive" width="50%">
+                <a class="fancybox" href="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}"><img src="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}" width="50%">
                 </a>
               </div>
               <div class="product_desc">

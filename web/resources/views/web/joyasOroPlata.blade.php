@@ -72,10 +72,12 @@
             <div class="product_wrap heading_space">
               <div class="image">
                 <div class="tag">
-                  
+                  <div class="tag-btn">
+                    <span class="uppercase text-center">{{$joya->categorias->name}}</span>
+                  </div>
                 </div>
-                <a class="fancybox" href="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}"><img src="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}" alt="Product" class="img-responsive" width="50%"><br>
-                    <img src="{{ asset('images/valeny.png') }}" alt="Product" class="img-responsive"  >
+                <a class="fancybox" href="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}"><img src="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}"  class="img-responsive imagenclase" ><br>
+                    <img src="{{ asset('images/valeny.png') }}"  class="img-responsive"  >
                 </a>
               </div>
               <div class="product_desc"> 
@@ -101,7 +103,7 @@
           </div>
            @endforeach
         </div> 
-       
+        {{ $joyas->links()}}
       </div>
 
     </div>

@@ -23,7 +23,7 @@
 <tr>
 <td>
 <table cellpadding="0" cellspacing="0" width="600" bgcolor="#FFFFFF" align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:12px;">
-<tr><td bgcolor="#fff800" height="75" align="center" style="color:#FFFFFF; text-align:center;"><a href="https://valeny.com" target="_blank" style="border:none;"><img src="{{ asset('email/images/logo.png') }}" border="0" /></a>
+<tr><td bgcolor="#ffdede" height="75" align="center" style="color:#FFFFFF; text-align:center;"><a href="https://valeny.com" target="_blank" style="border:none;"><img src="{{ asset('email/images/logo.png') }}" border="0" /></a>
 </td></tr>
 <tr><td height="5" bgcolor="#000000"></td></tr>
 <tr><td></td></tr>
@@ -52,7 +52,7 @@
 <table cellpadding="0" cellspacing="0" width="600" bgcolor="#eaeaea" align="center" style="font-family:Arial, Helvetica, sans-serif;">
 <tr>
 <td width="145"></td>
-<td width="310" height="42" bgcolor="#fff800" align="center" style="background-color:#fff800; text-align:center; border-bottom:3px solid #000000;">
+<td width="310" height="42" bgcolor="#ffdede" align="center" style="background-color:#ffdede; text-align:center; border-bottom:3px solid #000000;">
 <a href="https://valeny.com" target="_blank" style="font-size:19px; color:#000000; text-decoration:none;">VISITA NUESTRO SITIO</a>
 </td>
 <td width="145"></td>

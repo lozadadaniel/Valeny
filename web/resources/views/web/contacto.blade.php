@@ -60,9 +60,14 @@
           <div class="contact_detail padding_bottom">
             <h3 class="uppercase heading bottom30">Información.</h3>
             <p class="bottom30">Si tienes alguna pregunta sobre lo que ofrecemos, nuestros productos y servicios, siempre puedes enviarnos un correo electrónico, responderemos en un plazo de 24 horas.</p>
-            <div class="address bottom30">
+             <div class="address bottom30">
               <i class="fa fa-map-marker"></i>
               <h5 class="uppercase">Ubicación</h5>
+              <p>Bucaramanga, Colombia.</p>
+            </div>
+            <div class="address bottom30">
+              <i class="fa fa-map-marker"></i>
+              <h5 class="uppercase">Distribuidores</h5>
               <p>Colombia, Argentina, Chile, Miami, Ecuador ,Panamá,Costa Rica, Mexico, Estados Unidos.</p>
             </div>
             <div class="address bottom30">
@@ -83,4 +88,9 @@
     </div>
   </section> 
 
+
+  <section class="padding_bottom">
+    <h3 class="hidden">hidden</h3>
+    <div id="test" class="gmap3"></div>
+  </section>
 @endsection

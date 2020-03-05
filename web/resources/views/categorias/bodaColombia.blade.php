@@ -67,28 +67,31 @@
     </div>  
     
     <div class="row shop-grid grid-view">
-       @foreach ($bodaColombia->joyas as $joya)
+       @foreach ($aaa as $joya)
       <div class="col-md-3 col-sm-6">
         <div class="product_wrap heading_space">
           <div class="image">
             <div class="tag">
                 <div class="tag">
-                
+                <div class="tag-btn">
+                <span class="uppercase text-center">{{$joya->categorias->name}}</span>
+                </div>
               </div>
               </div>
-            <a class="fancybox" href="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}"><img src="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}" alt="Product" class="img-responsive"><br>
+               @php
+        $nombre = str_replace(" ", "-", $joya->name);
+            @endphp
+            <a  href="{{ route('joyas.profile',[$nombre])}}"><img src="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}" alt="Product" class="img-responsive"><br>
                     <img src="{{ asset('images/valeny.png') }}" alt="Product" class="img-responsive"  ></a>
           </div>
           <div class="product_desc">
-             @php
-        $nombre = str_replace(" ", "-", $joya->name);
-            @endphp
-           <a href="{{ route('joyas.profile',[$nombre])}}"><p class="title">{{ $joya->name}}</p></a>
+            
+           <a href="{{ route('joyas.profile',[$nombre])}}">COTIZAR</a>
            <div class="list_content">
                <h4 class="bottom30">{{ $joya->name}} </h4>
                <p>{{ $joya->description}}</p>
                 <div class="cart-buttons">
-                  <a class="uppercase border-radius btn-dark" href="cart.html">&nbsp; Cotizar</a>
+                  <a class="uppercase border-radius btn-dark" href="{{ route('joyas.profile',[$nombre])}}">&nbsp; Cotizar</a>
                   <a class="icons" href="#.">
                   <i class="fa fa-exchange"></i>
                   </a>
@@ -101,7 +104,7 @@
       </div>
       @endforeach
     </div>
-    
+    {{ $aaa->links()}}
   </div>
 </section>
 

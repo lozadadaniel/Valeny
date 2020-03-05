@@ -53,21 +53,9 @@
 
 </style>
 
-    <a class='flotante' href='https://wa.me/573103766113' ><img src='wp.png' border="0"/></a>
+    <a class='flotante' href='https://wa.me/573103766113' ><img src="{{ asset('wp.png')}}" border="0"/></a>
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5e41ca9ca89cda5a188534cc/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
 
     <!--TOPBAR-->
     <div class="topbar">
@@ -382,7 +370,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                 </li>
                 <li>
                   <i class="fa fa-phone">
-                  </i>(+57) 3016469607
+                  </i>(+57) 310 3766113
                 </li>
                 <li>
                   <a href="#.">
@@ -513,7 +501,19 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
         </div>
       </div>
     </div>
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e41ca9ca89cda5a188534cc/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
   <script src="{{ asset('js/jquery-2.2.3.js') }}">
     </script>

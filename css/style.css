@@ -1398,6 +1398,10 @@ header.right-menu .side .widget ul.link li a:focus, header.right-menu .side .wid
 	transform:translate(-50%,-50%);
 	opacity:0;
 }
+
+.imagenclase img{
+	width: 250px !important;
+}
 .blog_item:hover .blog_image a{
 	opacity:1;
 }

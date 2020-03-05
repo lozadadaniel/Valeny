@@ -65,7 +65,7 @@
                  data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
                  data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                           
                  data-start="1600">
-              <a href="{{route('catalogo')}}" class="btn-common">Cotizar ahora oro plata
+              <a href="{{route('catalogo')}}" class="btn-common">Solicitar catálogo
               </a>
             </div>
           </li>
@@ -127,7 +127,7 @@
                  data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
                  data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"               
                  data-start="1600">
-              <a href="{{route('catalogo')}}" class="btn-common">Cotizar ahora oro plata
+              <a href="{{route('catalogo')}}" class="btn-common">Solicitar catálogo
               </a>
             </div>
           </li>
@@ -151,7 +151,7 @@
               </p>
             </div>
             <div class="right">
-              <a href="{{route('contacto')}}" class="btn-common uppercase" > Contacto
+              <a href="{{route('catalogo')}}" class="btn-common uppercase" > Solicitar catálogo
               </a>
             </div>
           </div>
@@ -296,7 +296,7 @@
               </p>
             </div>
             <div class="right">
-              <a href="{{route('contacto')}}" class="btn-common uppercase" > Contacto
+              <a href="{{route('catalogo')}}" class="btn-common uppercase" > Solicitar catálogo
               </a>
             </div>
           </div>
@@ -320,7 +320,7 @@
                   <span class="uppercase">Joyería
                   </span>
                 </div>
-                <p>Valeny es una joyería mayorista productora de elegantes joyas de oro y plata elaboradas a mano por artesanos joyeros. También elaboramos joyas fabricadas en Acero con precios realmente competitivos. Nuestros precios son los mejores del mercado de la joyería. Los Anillos, Pulseras, Aretes y Dijes contienen piedras, circones, oro rosado, oro amarillo, plata ley 925. Nuestra fábrica principal está ubicada en Bucaramanga, Santander, Colombia. Desde donde despachamos al exterior nuestras joyas. 10 años de experiencia en la elaboración de joyas hacen que seamos la mejor opción en proveedores de joyas de calidad.
+                <p>Valeny es una joyería mayorista productora de elegantes joyas de oro y plata elaboradas a mano por artesanos joyeros. Nuestros precios son los mejores del mercado de la joyería. Los Anillos, Pulseras, Aretes y Dijes contienen piedras, circones, oro rosado, oro amarillo, plata ley 925. Nuestra fábrica principal está ubicada en Bucaramanga, Santander, Colombia. Desde donde despachamos al exterior nuestras joyas. 10 años de experiencia en la elaboración de joyas hacen que seamos la mejor opción en proveedores de joyas de calidad.
                 </p>
               </div> 
             </div>

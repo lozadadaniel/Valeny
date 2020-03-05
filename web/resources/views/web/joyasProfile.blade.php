@@ -10,7 +10,7 @@
             <li><a href="index.html">Home</a>
             </li>
             <li>Products</li>
-            <li class="active"> Sacrificial Chair Design </li>
+            <li class="active"> {{ $joyas->name }} </li>
           </ul>
         </div>
       </div>
@@ -41,7 +41,7 @@
             <b>Existencia:</b> Disponible <br>
             <b>Descripción: </b><p class="bottom30">{{ $joyas->description}}</p>
 
-            <h3 class="bottom30">Escribenos a Whatsapp (+57) 3155644758</h3><br>
+            <h3 class="bottom30">Escribenos a Whatsapp (+57) 310 3766113</h3><br>
             <div class="cart-buttons">
               <a class="uppercase border-radius btn-dark" href="{{route('catalogo')}}"><i class="fa fa-shopping-basket"></i> &nbsp; Cotizar</a>
             </div>
@@ -85,7 +85,7 @@
 Joyas Medellín</b><br>
 Preciosos set, conjunto o juego de joyas de oro y plata conformados (en su mayoría) por un Dije dos Aretes y un Anillo en oro plata Hecho a mano por artesanos joyeros. <br>
 <b>Descripción Set</b><br>
-Nuestra experiencia certificada de 10 años en el mercado nos da un plus de confiabilidad,exclusividad y calidad. Puedes comprar sets por mayor para tu negocio.
+Nuestra experiencia certificada de 30 años en el mercado nos da un plus de confiabilidad,exclusividad y calidad. Puedes comprar sets por mayor para tu negocio.
 Realizamos envíos internacionales a cualquier país. Solicita nuestro Catálogo y entérate de nuevos diseños. Síguenos en Facebook.</p>
               </div>
 
@@ -117,7 +117,7 @@ Realizamos envíos internacionales a cualquier país. Solicita nuestro Catálogo
             <div class="tag-btn"><span class="uppercase text-center">New</span>
             </div>
             <div class="image">
-              <a class="fancybox" href="{{ route('joya.avatar', ['filename'=>$anillo->image_path]) }}"><img src="{{ route('joya.avatar', ['filename'=>$anillo->image_path]) }}" alt="Product" class="img-responsive">
+              <a class="fancybox" href="{{ route('joya.avatar', ['filename'=>$anillo->image_path]) }}"><img src="{{ route('joya.avatar', ['filename'=>$anillo->image_path]) }}"    >
               </a>
             </div>
             <div class="product_desc">

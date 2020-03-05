@@ -35,7 +35,7 @@ class InicioController extends Controller
     }
     public function joyasOroPlata(){
 
-        $joyas = Joya::orderBY('id','desc')->get();
+        $joyas = Joya::orderBY('id','desc')->paginate(30);
         $categorys = Categoria::orderBY('id','asc')->get();
         return view('web.joyasOroPlata', 
             ['joyas' => $joyas], 
@@ -88,11 +88,10 @@ class InicioController extends Controller
     public function enviarCatalogo(Request $request){
         $this->validate($request,[ 'name'=>'required', 'email'=>'required', 'city'=>'required', 'phone'=>'required', 'categoria_id'=>'required' ]);
 
-        Mail::send('email.enviados',$request->all() , function($message){
+        Mail::send('email.catalogo',$request->all() , function($message){
             $message->from('info@valeny.com','Valeny Joyeria');
-            $message->to('brynlozada@gmail.com')->subject('Nuevo catalogo enviado');
+            $message->to('info@valeny.com')->subject('Nuevo catalogo enviado');
         });
-        
 
         Catalogo::create($request->all());
 
@@ -156,37 +155,43 @@ class InicioController extends Controller
 
     public function anillosColombia(){
         $anillosColombia = Categoria::find(1);
+        $aaa = Joya::where('categoria_id', '1')->paginate(20);
 
-        return view('categorias.anillosColombia', ['anillosColombia' => $anillosColombia]);
+        return view('categorias.anillosColombia', ['anillosColombia' => $anillosColombia], ['aaa' => $aaa]);
     }
 
     public function pulserasColombia(){ 
         $pulserasColombia = Categoria::find(2);
+        $aaa = Joya::where('categoria_id', '2')->paginate(20);
 
-        return view('categorias.pulserasColombia', ['pulserasColombia' => $pulserasColombia]);
+        return view('categorias.pulserasColombia', ['pulserasColombia' => $pulserasColombia] , ['aaa' => $aaa]);
     }
 
     public function setsColombia(){ 
         $setsColombia = Categoria::find(3);
+        $aaa = Joya::where('categoria_id', '3')->paginate(20);
 
-        return view('categorias.setsColombia', ['setsColombia' => $setsColombia]);
+        return view('categorias.setsColombia', ['setsColombia' => $setsColombia], ['aaa' => $aaa]);
     }
 
     public function dijesColombia(){ 
         $dijesColombia = Categoria::find(4);
+        $aaa = Joya::where('categoria_id', '4')->paginate(20);
 
-        return view('categorias.dijesColombia', ['dijesColombia' => $dijesColombia]);
+        return view('categorias.dijesColombia', ['dijesColombia' => $dijesColombia], ['aaa' => $aaa]);
     }
 
      public function collaresColombia(){ 
         $collaresColombia = Categoria::find(5);
+        $aaa = Joya::where('categoria_id', '5')->paginate(20);
 
-        return view('categorias.collaresColombia', ['collaresColombia' => $collaresColombia]);
+        return view('categorias.collaresColombia', ['collaresColombia' => $collaresColombia], ['aaa' => $aaa]);
     }
 
     public function bodaColombia(){ 
         $bodaColombia = Categoria::find(6);
+        $aaa = Joya::where('categoria_id', '6')->paginate(20);
 
-         return view('categorias.bodaColombia', ['bodaColombia' => $bodaColombia]);
+         return view('categorias.bodaColombia', ['bodaColombia' => $bodaColombia], ['aaa' => $aaa]);
     }  
 }

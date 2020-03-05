@@ -60,9 +60,15 @@ class InicioController extends Controller
         return view('web.joyasAceroPorMayor');
     }
 
-     public function contacto()
+     public function contacto(Request $request)
     {
-        return view('web.contacto');
+         
+         /* Mail::send('email.contacto',$request->all() , function($message){
+            $message->from('info@valeny.com','Valeny Joyeria');
+            $message->to('info@valeny.com')->subject('Nuevo mensaje');
+        }); */
+
+        return redirect()->route('web.contacto')->with('message','Solicitud enviada exitosamente');
     }
      public function politicas()
     {

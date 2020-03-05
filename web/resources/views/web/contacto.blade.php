@@ -37,19 +37,20 @@
       <div class="row">
         <div class="col-md-8">
           <h3 class="uppercase heading bottom30">Enviar un mensaje</h3>
-          <form class="contact-form padding_bottom">
+          <form method="post" class="contact-form padding_bottom"  action="{{ route('enviar.contacto')}}" >
+             @csrf
             <div class="row">
               <div class="col-md-6 form-group">
                 <label for="exampleInputName2">Nombre</label>
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="¿Cómo te llamas?">
+                <input type="text" name="name" class="form-control" id="exampleInputName2" placeholder="¿Cómo te llamas?">
               </div>
               <div class="col-md-6 form-group">
                 <label for="exampleInputEmail2">Correo</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="correo@ejemplo.com">
+                <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="correo@ejemplo.com">
               </div>
               <div class="col-md-12 form-group">
                 <label for="message">Mensaje</label>
-                <textarea class="form-control" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <textarea name="mensaje" class="form-control" placeholder="Escribe tu mensaje aquí..."></textarea>
                 <input type="submit" class="btn-form uppercase border-radius margintop40" value="Enviar tu mensaje">
               </div>
             </div>

@@ -33,7 +33,7 @@ class InicioController extends Controller
 
         return view('inicio', compact('categorias', 'joyas', 'anillos', 'pulseras', 'dijes'));
     }
-    public function joyasOroPlata(){
+    public function joyasOroPlata(){ 
 
         $joyas = Joya::orderBY('id','desc')->paginate(30);
         $categorys = Categoria::orderBY('id','asc')->get();

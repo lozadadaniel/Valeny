@@ -131,7 +131,7 @@
                 <div class="tag">
                   <div class="tag-btn">
                     <span class="uppercase text-center">Nuevo</span>
-                  </div>
+                  </div> 
                 </div>
                 <a class="fancybox" href="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}"><img src="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}" width="50%">
                 </a>
@@ -143,12 +143,99 @@
                   <p>{{ $joya->description}}</p>
                   <h3 class="price bottom30"><i class="fa fa-dollar"></i> {{ $joya->precio}} &nbsp;<span class="discount"></h3>
                   <div class="cart-buttons">
-                    <a class="icons" href="#.">
+                    <a class="icons side-button bottom30" href="#" data-toggle="modal" data-target="#j{{$joya->id}}">
                       <i class="fa fa-pencil"></i>
                     </a>
-                    <a class="icons" href="#.">
+
+                    <div id="j{{$joya->id}}" class="modal modal-edu-general default-popup-PrimaryModal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-close-area modal-close-df">
+                                        <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                        <center><h1>Editar producto</h1>  </center>
+                                            <hr>
+                                            <div class="row">  
+                                              <div class="col-md-6">
+                          <form method="post" action="{{route('update.joya')}}" enctype="multipart/form-data" >
+                            @csrf
+                            <input type="hidden" name="id" value="{{ $joya->id}}">
+                          <b>Nombre:</b> 
+                          <input type="text" class="form-control" name="name" value="{{$joya->name}}" >
+                          <b>Categoría:</b> 
+                          <select class="form-control"  name="category_id" >
+                                            <option value="{{ $joya->categoria_id }}" >{{ $joya->categorias->name }}</option> 
+                                            @foreach($categorys as $category)
+                                            <option value="{{ $category->id }}" >{{ $category->name }}</option>
+                                            @endforeach
+                          </select>
+                          <b>Descripción:</b>
+                          <input type="textarea" class="form-control" value="{{ $joya->description}}" name="description"  > </input>
+
+                          
+                          
+
+                         </div>
+                         <div class="col-md-6">
+                          <b>Precio:</b> 
+                          <input type="text" class="form-control" name="precio" value="{{ $joya->precio}}" >
+                          <b>Subir Nueva Imagen:</b> <br>
+                          <img width="30%" src="{{ route('joya.avatar', ['filename'=>$joya->image_path]) }}">
+                          <br>
+                          <input type="file" id="image_path" name="image_path" >
+                         </div>
+                            </div>
+                            <hr>
+                            <center>
+                            <button type="submit" class="btn btn-general btn-blue mr-2">Guardar</button>
+                            </center>
+                          </form>
+                                    <div class="modal-footer">
+                                        <a data-dismiss="modal" href="#">Cerrar</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>
+
+
+                    
+
+
+                    <a  class="icons side-button bottom30" href="#" data-toggle="modal" data-target="#b{{$joya->id}}">
                       <i class="fa fa-close"></i>
                     </a>
+
+
+                    <div id="b{{$joya->id}}" class="modal modal-edu-general default-popup-PrimaryModal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-close-area modal-close-df">
+                                        <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                        <center><h1>Borrar producto</h1>  </center>
+                                            <hr>
+                                            <div class="row">  
+                                              <div class="col-md-12">
+                          
+                          <center>
+                            Está seguro de borrar este producto? - {{ $joya->name}}
+                          <br>
+                          <a href="{{route('delete.joya', ['filename'=>$joya->id])}}" class="btn btn-success">Si</a>
+                            <a data-dismiss="modal" class="btn btn-danger">No</a>
+                        </center>
+                         </div>
+                         
+                            </div>
+  
+                                    
+                                </div>
+                            </div>
+                        </div></div>
                   </div>
                 </div>
                 <span class="price"><i class="fa fa-dollar"></i> {{ $joya->precio}} &nbsp;</span>
@@ -157,7 +244,7 @@
           </div>
            @endforeach
         </div> 
-       
+       {{ $joyas->links()}}
       </div>
 
     </div>

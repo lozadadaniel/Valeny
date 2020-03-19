@@ -151,3 +151,6 @@ Route::get('/imagenjoya/{filename}', 'InicioController@getImage')->name('joya.av
 Route::get('/superadmin/boletin', 'SuperAdminController@boletin')->name('boletin');
 
 
+Route::post('/superadmin/joyas/update', 'SuperAdminController@updateJoya')->name('update.joya');
+Route::get('/superadmin/joyas/delete/{id}', 'SuperAdminController@deleteJoya')->name('delete.joya');
+

@@ -89,6 +89,83 @@
     </div>
   </section> 
 
+   <!--NEW ARRIVALS-->
+    <section id="taller" class="padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="heading_space uppercase">Nuestro taller de fabricación
+            </h2>
+            <p class="bottom_half">Podemos decir que nosotros Valeny joyeros somos una de las mejores o sino la mejor fabrica de joyas Colombia en oro plata, con reconocimiento internacional en la fabricación, comercialización y exportación de las mismas. ¿nuestro respaldo? Mas de 30 años de experiencia en este sector que nos da un peso específico en el mercado.</p>
+
+<p>Nuestra casa Matriz se encuentra en Bucaramanga Santander por ser la cuna de la joyería en oro plata de Colombia, desde donde despachamos nuestros productos a cualquier lugar del mundo. Contamos con un gran equipo de artesanos, diseñadores y expertos en comercialización de joyas. Podemos surtir con nuestras prendas una amplia variedad de negocios de joyerías, desarrollar prototipos a gusto de nuestros clientes, asesorar en la estrategia de comercialización de nuestros clientes.
+            </p><br><br>
+          </div>
+        </div>
+        <div class="row">
+          <div id="fourCol-slider" class="owl-carousel">
+           
+            <div class="item">
+              <div class="product_wrap">
+                <div class="image">
+                  <a class="fancybox" href="{{ asset('images/joyeros01.jpg') }}">
+                    <img src="{{ asset('images/joyeros01.jpg') }}" alt="Product" class="img-responsive"  >
+                    
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="product_wrap">
+                <div class="image">
+                  <a class="fancybox" href="{{ asset('images/joyeros02.jpg') }}">
+                    <img src="{{ asset('images/joyeros02.jpg') }}" alt="Product" class="img-responsive"  >
+                    
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="product_wrap">
+                <div class="image">
+                  <a class="fancybox" href="{{ asset('images/joyeros03.jpg') }}">
+                    <img src="{{ asset('images/joyeros03.jpg') }}" alt="Product" class="img-responsive"  >
+                    
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="product_wrap">
+                <div class="image">
+                  <a class="fancybox" href="{{ asset('images/joyeros04.jpg') }}">
+                    <img src="{{ asset('images/joyeros04.jpg') }}" alt="Product" class="img-responsive"  >
+                    
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="product_wrap">
+                <div class="image">
+                  <a class="fancybox" href="{{ asset('images/joyeros05.jpg') }}">
+                    <img src="{{ asset('images/joyeros05.jpg') }}" alt="Product" class="img-responsive"  >
+                    
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+           
+          </div>
+        </div>
+      </div>
+    </section>
+   
 
   
 @endsection

@@ -92,7 +92,7 @@ Realizamos envíos internacionales a cualquier país. Solicita nuestro Catálogo
               <div id="tab2" class="tab_content">
                 <ol class="commentlist">
                   <p>
-                  	 joyas de oro y plata, Oro plata por mayor, de oro, de plata, Joyas Por Mayor, Joyas Por Mayoreo, Joyas Por Mayor Chile, Joyas Por Mayor Santiago, Joyas Por Mayor Patronato, Joyas Por Mayor Plata, Joyas Por Mayor Acero Quirurgico, Joyas Por Mayor Plata Y Oro, Joyas Por Mayor Argentina, Joyas Por Mayor En Once, De Oro Y Plata Letra, Cotizacion joyas De Oro Y Plata, Compra De Oro Y Plata, Joyas De Oro Y Plata, Anillos De Oro Y Plata, Precio De Oro Y Plata, Lagrimas De Oro Y Plata, Alianzas De Oro Y Plata, Joyas De Oro Y Plata, Joyas De Oro Y Plata Por Mayor, Joyas De Oro Y Plata Por Catalogo, Joyas De Oro Y Plata Para Revender, Joyas De Oro Y Plata Precios, Joyas De Oro Y Plata Para Vender, Joyas De Oro Y Plata Al Por Mayor, Joyas De Oro Y Plata Para Vender Por Catalogo, Joyas De Oro Y Plata Venta Por Mayor, Joyas De Oro Y Plata Por Mayor En Tucuman, Dijes De Oro Y Plata, Dijes De Oro Y Plata Bulgari, Dijes De Oro Y Plata Mercadolibre, Dijes De Oro Y Plata Precios, Dijes De Oro Y Plata Para Chicas, Cadenas Y Dijes De Oro Y Plata Precio, Cadenas Y Dijes De Oro Y Plata, Cadenas Con Dijes De Oro Y Plata, Dijes Oro Plata Colombia, Dijes De Plata Y Oro Para Mujeres, sijes Miami, anillos Miami, anillos de oro y plata por mayor, anillos por mayor, pulseras de oro y plata por mayor, aretes de oro y plata, aretes, aretes por mayor, mayoristas joyas, sets de oro y plata, sets en oro plata acora panamá.
+                  	 {{ $joyas->tags}}
                   </p>
                 </ol>
               </div>

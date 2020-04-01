@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app') 
 
 @section('content')
 
@@ -101,6 +101,10 @@
                           <input type="file" id="image_path" name="image_path" required>
                          </div>
                             </div>
+                            <div class="col-md-12">
+                              <b>Tags:</b>
+                          <textarea name="tags" class="form-control"  rows="10" cols="40" >Escribe aquí los tags del producto</textarea>
+                            </div>
                             <hr>
                             <center>
                             <button type="submit" class="btn btn-general btn-blue mr-2">Guardar</button>
@@ -176,6 +180,8 @@
 
                           
                           
+                          
+                          
 
                          </div>
                          <div class="col-md-6">
@@ -187,6 +193,11 @@
                           <input type="file" id="image_path" name="image_path" >
                          </div>
                             </div>
+                            <div class="col-md-12">
+                              <b>Tags:</b>
+                          <textarea name="tags" class="form-control"  rows="10" cols="40" >{{ $joya->tags}}</textarea>
+                            </div>
+
                             <hr>
                             <center>
                             <button type="submit" class="btn btn-general btn-blue mr-2">Guardar</button>

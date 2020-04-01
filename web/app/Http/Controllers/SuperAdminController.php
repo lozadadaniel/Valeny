@@ -60,12 +60,15 @@ class SuperAdminController extends Controller
          $description = $request->input('description');
          $category = $request->input('category_id');
          $precio = $request->input('precio');
+         $tags = $request->input('tags');
+
 
             $joya = new Joya();
             $joya->name = $name;
             $joya->description = $description;
             $joya->categoria_id = $category;
             $joya->precio = $precio;
+            $joya->tags = $tags;
 
             //Subir la imagen 
         $image_path = $request->file('image_path');
@@ -86,7 +89,7 @@ class SuperAdminController extends Controller
 
         return redirect()->route('joyas')->with('message','Joya creada éxitosamente');
     }
-
+ 
     public function updateJoya(Request $request) {
 
         //Validar usuairo
@@ -100,6 +103,7 @@ class SuperAdminController extends Controller
             'description' => ['required', 'string', 'max:255'],
             'category_id' => ['required', 'string', 'max:255'],
             'precio' => ['required', 'string', 'max:255'],
+           
             
         ]);
 
@@ -109,12 +113,14 @@ class SuperAdminController extends Controller
          $description = $request->input('description');
          $category = $request->input('category_id');
          $precio = $request->input('precio');
+         $tags = $request->input('tags');
 
         //asignar nuevos valores al objeto del usuario
         $joya->name = $name;
             $joya->description = $description;
             $joya->categoria_id = $category;
             $joya->precio = $precio;
+            $joya->tags = $tags;
 
         //Subir la imagen 
         $image_path = $request->file('image_path');
